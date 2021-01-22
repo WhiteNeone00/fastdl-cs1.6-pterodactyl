@@ -4,6 +4,17 @@
 # FastDownload Pterodactyl v1.X v2
 Automatic script what detects the creation & deletion of a server, and detect if the server is a Valve Game (Source/SRCDS)
 
+AppID | Game | Supported
+------------ | ------------- | :--:
+~ | If you test a game and see it's working contact me to add to the list | ⚠️
+~ | All HL1/HL2 games and mods | ✅ 
+440 | [Team Fortress 2](http://store.steampowered.com/app/440/) | ✅ 
+500 | [Left 4 Dead](http://store.steampowered.com/app/500/) | ✅ 
+550 | [Left 4 Dead 2](http://store.steampowered.com/app/550/) | ✅ 
+730 | [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) | ✅ 
+4000 | [Garry's Mod](http://store.steampowered.com/app/4000/) | ✅ 
+225840 | [Sven Coop](http://store.steampowered.com/app/225840/) | ✅
+
 Add current virtual.conf to conf.d directory of a nginx daemon and edit the line 
 ```
 server_name  example.website.ro;
