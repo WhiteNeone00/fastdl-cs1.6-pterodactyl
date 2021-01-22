@@ -29,7 +29,7 @@ AppID | Game | Supported
  1. Add current virtual.conf to conf.d directory of a nginx daemon and edit the line, ith your currently running node **FQDN**.
   This virtual.conf is configured to run as root under /var/lib/pterodactyl/volumes/ and list directories from here as default.
   
-  ``` server_name  example.website.ro; ```
+ *  ``` server_name  example.website.ro; ```
   
 ## Pterodactyl Panel
 1. We will need to configure our egg to use a JSON file parser.
