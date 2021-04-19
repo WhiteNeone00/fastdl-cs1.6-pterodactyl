@@ -22,7 +22,7 @@ AppID | Game | Supported
 2. Run the commands below to set group permissions for read and exec
   * ``` chmod 755 /var/lib/pterodactyl/ && chmod 755 /var/lib/pterodactyl/volumes/ ```
 3. Add the command below in the last line of Eggs "Install script"
-  * ``` chmod -R 750 /mnt/server/ ```
+  * ``` chmod 750 /mnt/server/ ```
 
 
 ## NGINX Configuration
