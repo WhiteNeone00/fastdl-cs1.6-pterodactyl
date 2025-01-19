@@ -12,7 +12,7 @@ AppID | Game | Supported
 440 | [Team Fortress 2](http://store.steampowered.com/app/440/) | ✅ 
 500 | [Left 4 Dead](http://store.steampowered.com/app/500/) | ✅ 
 550 | [Left 4 Dead 2](http://store.steampowered.com/app/550/) | ✅ 
-730 | [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) | ✅ 
+730 | [Counter-Strike: Global Offensive, CounterStrike 1.6](http://store.steampowered.com/app/730/) | ✅ 
 4000 | [Garry's Mod](http://store.steampowered.com/app/4000/) | ✅ 
 225840 | [Sven Coop](http://store.steampowered.com/app/225840/) | ✅
 
@@ -21,8 +21,8 @@ AppID | Game | Supported
   * ``` gpasswd -a www-data pterodactyl ```
 2. Run the commands below to set group permissions for read and exec
   * ``` chmod 755 /var/lib/pterodactyl/ && chmod 755 /var/lib/pterodactyl/volumes/ ```
-3. Add the command below in the last line of Eggs "Install script"
-  * ``` chmod 750 /mnt/server/ ```
+3. Download the egg i made and upload it on pterodactyl
+  * ``` https://github.com/WhiteNeone00/CounterStrike1.6-EGG-Pterodactyl/tree/main/server ```
 
 
 ## NGINX Configuration
@@ -33,20 +33,7 @@ AppID | Game | Supported
  *  ``` server_name  example.website.ro; ```
   
 ## Pterodactyl Panel
-1. We will need to configure our egg to use a JSON file parser.
-
-```
-{
-    "csgo/cfg/server.cfg": {
-        "parser": "file",
-        "find": {
-            "sv_downloadurl": "sv_downloadurl \"http://{{env.P_SERVER_LOCATION}}/{{env.P_SERVER_UUID}}/csgo/\"",
-            "sv_allowdownload": "sv_allowdownload \"1\"",
-            "sv_allowupload": "sv_allowupload \"0\""
-        }
-    }
-}
-```
+1. We will create now a server with that egg and done!
 
 **NOTE**: Please pay attention that the "sv_downloadurl" variable has a /csgo at the end, this can be configured on ANY running egg with your desired path.
 
@@ -64,3 +51,4 @@ Our **sv_downloadurl** will be like this
 
 ## Credits:
 Dr3Amer3r - [Pterodactyl FastDL Version v1](https://github.com/Dr3Ame3r/pterodactyl_fastdl)
+alexevladgabriel - [Pterodactyl FastDL Version v2](https://github.com/alexevladgabriel/fastdl-pterodactyl-v2)
