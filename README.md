@@ -30,6 +30,8 @@ AppID | Game | Supported
  1. Add current virtual.conf to conf.d directory of a nginx daemon and edit the line, ith your currently running node **FQDN**.
   This virtual.conf is configured to run as root under /var/lib/pterodactyl/volumes/ and list directories from here as default.
   
+ *  ``` nano /etc/nginx/sites-available/fastdl.conf ```
+
  *  ``` server_name  example.website.ro; ```
 
  *  ``` sudo ln -s /etc/nginx/sites-available/fastdl.conf /etc/nginx/sites-enabled/ ```
