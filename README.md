@@ -31,6 +31,8 @@ AppID | Game | Supported
   This virtual.conf is configured to run as root under /var/lib/pterodactyl/volumes/ and list directories from here as default.
   
  *  ``` server_name  example.website.ro; ```
+
+ *  ``` sudo ln -s /etc/nginx/sites-available/fastdl.conf /etc/nginx/sites-enabled/ ```
   
 ## Pterodactyl Panel
 1. We will create now a server with that egg and done!
